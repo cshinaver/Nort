@@ -1,3 +1,3 @@
 (ns nort-core.core)
 
-(.log js/console "Hey Seymore sup?!")
+(.log js/console "lolwut")
