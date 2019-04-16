@@ -3,6 +3,8 @@
                  [org.clojure/clojurescript "1.9.908"]]
   :plugins [[lein-figwheel "0.5.13"]]
   :clean-targets [:target-path "out"]
+  :figwheel {
+             :css-dirs ["resources/public/css"]}
   :cljsbuild {
               :builds [{:id "dev"
                         :source-paths ["src"]
