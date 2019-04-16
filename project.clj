@@ -14,5 +14,5 @@
                         :figwheel true
                         :compiler {:main "nort-core.core"
                                    :output-dir "static/js/out"
-                                   :output-to "static/js/out/main.js"
+                                   :output-to "static/js/main.js"
                                    }}]})
