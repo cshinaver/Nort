@@ -7,11 +7,12 @@
             ]
   :clean-targets [:target-path "out"]
   :figwheel {
-             :css-dirs ["resources/public/css"]}
+             :css-dirs ["static/css"]}
   :cljsbuild {
               :builds [{:id "dev"
                         :source-paths ["src"]
                         :figwheel true
                         :compiler {:main "nort-core.core"
-                                   :output-dir "resources/public/js/out"
+                                   :output-dir "static/js/out"
+                                   :output-to "static/js/out/main.js"
                                    }}]})

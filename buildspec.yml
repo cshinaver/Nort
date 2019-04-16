@@ -17,8 +17,8 @@ phases:
 artifacts:
   files:
     - target/*
-    - resources/public/js/out/*
-    - resources/*
+    - static/js/out/*
+    - static/*
     - application.py
     - requirements.txt
-    - index.html
+    - templates/index.html
