@@ -10,6 +10,7 @@ phases:
     commands:
   build:
     commands:
+        - cd $CODEBUILD_SRC_DIR
         - LEIN_ROOT=true lein cljsbuild once dev
   post_build:
     commands:
