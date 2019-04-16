@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+        - cd $HOME
+        - wget https://raw.github.com/technomancy/leiningen/stable/bin/lein; chmod +x lein; mv lein /bin;
+        - LEIN_ROOT=true lein
+  pre_build:
+    commands:
+  build:
+    commands:
+        - LEIN_ROOT=true lein cljsbuild once dev
+  post_build:
+    commands:
+artifacts:
+  files:
+    - target/*
+    - resources/public/js/out/*
