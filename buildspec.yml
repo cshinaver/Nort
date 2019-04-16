@@ -16,9 +16,9 @@ phases:
     commands:
 artifacts:
   files:
-    - target/*
+    - target/**/*
     - static/js/out/*
-    - static/*
+    - static/**/*
     - application.py
     - requirements.txt
-    - templates/index.html
+    - templates/**/*
