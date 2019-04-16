@@ -5,7 +5,7 @@
   :plugins [[lein-figwheel "0.5.13"]
             [lein-cljsbuild "1.1.7"]
             ]
-  :clean-targets [:target-path "out"]
+  :clean-targets [:target-path "out" "static/js/main.js" "static/js/out"]
   :figwheel {
              :css-dirs ["static/css"]}
   :cljsbuild {
