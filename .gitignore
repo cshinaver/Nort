@@ -3,3 +3,5 @@ main.js
 figwheel_server.log
 out
 target
+*#*#*
+.lein-repl-history
