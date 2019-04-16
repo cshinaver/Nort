@@ -18,3 +18,7 @@ artifacts:
   files:
     - target/*
     - resources/public/js/out/*
+    - resources/*
+    - application.py
+    - requirements.txt
+    - index.html
