@@ -1,12 +1,14 @@
 (defproject hello-seymore "0.1.0"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.908"]
-                 [reagent "0.8.1"]]
+                 [reagent "0.8.1"]
+                 [cider/piggieback "0.4.0"]
+                 ]
   :plugins [[lein-figwheel "0.5.13"]
             [lein-cljsbuild "1.1.7"]]
   :profiles {:dev {:source-paths ["src"]
                    :dependencies [[cider/piggieback "0.4.0"]
-                                  [figwheel-sidecar "0.5.16"]]
+                                  [figwheel-sidecar "0.5.18"]]
                    :repl-options {:nrepl-middleware [cider.piggieback/wrap-cljs-repl]}}}
   :clean-targets [:target-path "out" "static/js/main.js" "static/js/out"]
   :figwheel {
