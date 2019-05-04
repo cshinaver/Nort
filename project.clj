@@ -5,7 +5,7 @@
   :plugins [[lein-figwheel "0.5.13"]
             [lein-cljsbuild "1.1.7"]]
   :profiles {:dev {:source-paths ["src"]
-                   :dependencies [[cider/piggieback "0.3.10"]
+                   :dependencies [[cider/piggieback "0.4.0"]
                                   [figwheel-sidecar "0.5.16"]]
                    :repl-options {:nrepl-middleware [cider.piggieback/wrap-cljs-repl]}}}
   :clean-targets [:target-path "out" "static/js/main.js" "static/js/out"]
