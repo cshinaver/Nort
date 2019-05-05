@@ -2,6 +2,7 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.908"]
                  [reagent "0.8.1"]
+                 [jarohen/chord "0.8.1"]
                  [cider/piggieback "0.4.0"]
                  ]
   :plugins [[lein-figwheel "0.5.13"]
