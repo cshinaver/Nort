@@ -15,7 +15,8 @@
 ;; hit the backend with a message that is printed to the backend's stout.
 (defn client-echo []
   (go
-    (let [{:keys [ws-channel error]} (<! (ws-ch "ws://localhost:5000/echo"))]
+    (let [{:keys [ws-channel error]} (<! (ws-ch "ws://localhost:5000/echo"
+                                                {:format :str}))]
       (if-not error
         (>! ws-channel "Hello server from client!")
         (js/console.log "Error:" (pr-str error))))))
