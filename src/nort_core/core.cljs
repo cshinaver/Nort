@@ -1,6 +1,7 @@
 (ns nort-core.core
   (:require [reagent.core :as r]
-            [nort-core.utils :refer [log]]))
+            [nort-core.utils :refer [log]]
+            [nort-core.draw :as d]))
 
 (defonce click-count (r/atom 0))
 
@@ -21,8 +22,8 @@
   (log (.-data event))
   (log event))
 
-(r/render [my-p-tag]
-          (.-body js/document))
+;(r/render [my-p-tag]
+;          (.-body js/document))
 
 ;; Example web socket
 (defn connect-to-websocket []
@@ -34,3 +35,6 @@
 
 ; Uncomment to connect to websocket
 ; (connect-to-websocket)
+
+; draw sketch
+;(d/render-sketch)

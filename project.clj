@@ -4,6 +4,7 @@
                  [reagent "0.8.1"]
                  [jarohen/chord "0.8.1"]
                  [cider/piggieback "0.4.0"]
+                 [quil "2.6.0"]
                  ]
   :plugins [[lein-figwheel "0.5.13"]
             [lein-cljsbuild "1.1.7"]]
